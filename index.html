@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Gallery</title>
+
+  <!-- CSS will be linked later -->
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-inner">
+
+      <!-- Gallery Title & Description -->
+      <div class="hero">
+        <h1 class="gallery-title">Creative Gallery</h1>
+        <p class="gallery-tagline">
+          A quiet space where moments, ideas, and stories meet.
+        </p>
+      </div>
+
+      <!-- Filters -->
+    <button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="nature">Nature</button>
+<button class="filter-btn" data-filter="business">Business</button>
+<button class="filter-btn" data-filter="flowers">Flowers</button>
+<button class="filter-btn" data-filter="books">Books</button>
+<button class="filter-btn" data-filter="technology">Technology</button>
+
+
+    </div>
+  </header>
+  <div class="gallery-wrapper">
+  <div class="gallery">
+  </div>
+</div>
+
+<section class="gallery">
+  <div class="gallery-grid">
+
+   <div class="gallery-item" data-category="nature">
+  <img src="images/img1.jpg" alt="Gallery Image">
+  <div class="gallery-overlay"><span>Nature</span></div>
+</div>
+
+<div class="gallery-item" data-category="business">
+  <img src="images/img2.jpg" alt="Gallery Image">
+  <div class="gallery-overlay"><span>Business</span></div>
+</div>
+
+<div class="gallery-item" data-category="flowers">
+  <img src="images/img3.jpg" alt="Gallery Image">
+  <div class="gallery-overlay"><span>Flowers</span></div>
+</div>
+
+<div class="gallery-item" data-category="books">
+  <img src="images/img4.jpg" alt="Gallery Image">
+  <div class="gallery-overlay"><span>Books</span></div>
+</div>
+
+<div class="gallery-item" data-category="technology">
+  <img src="images/img5.jpg" alt="Gallery Image">
+  <div class="gallery-overlay"><span>Technology</span></div>
+</div>
+
+
+  </div>
+</section>
+
+
+
+  <!-- JS will be linked later -->
+ <script src="script.js" defer></script>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+
+  <span class="lightbox-prev" id="lightboxPrev">&#10094;</span>
+
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Expanded Image">
+
+  <span class="lightbox-next" id="lightboxNext">&#10095;</span>
+</div>
+
+
+
+
+
+</body>
+</html>
